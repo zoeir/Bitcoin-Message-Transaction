@@ -173,11 +173,10 @@ After creating your transaction, broadcast it using any of these services:
 
 ### Mainnet Services
 
-<!-- wp:code -->
-<pre class="wp-block-code"><code>| Service | URL |
+
+| Service | URL |
 |---------|-----|
-| 🌐 **Bitcoin Message** | &#91;bitcoinmessage.ru](https://bitcoinmessage.ru) |</code></pre>
-<!-- /wp:code -->
+| 🌐 **Bitcoin Message** | [bitcoinmessage.ru](https://bitcoinmessage.ru) |
 
 **Steps:**
 
@@ -296,5 +295,6 @@ Please use the [GitHub Issues](https://github.com/zoeir/Bitcoin-Message-Transact
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/zoeir/Bitcoin-Message-Transaction)
 
 ---
+
 
 
