@@ -25,15 +25,24 @@ Create Bitcoin transactions with embedded OP_RETURN messages. This tool allows y
 
 ### Prerequisites
 
-- Python 3.6 or higher
-- Git
+<!-- wp:code -->
+<pre class="wp-block-code"><code>- Python 3.6 or higher
+- Git</code></pre>
+<!-- /wp:code -->
+
 
 ### Clone Repository
-git clone https://github.com/zoeir/Bitcoin-Message-Transaction.git
-cd Bitcoin-Message-Transaction
+<!-- wp:code -->
+<pre class="wp-block-code"><code>git clone https://github.com/zoeir/Bitcoin-Message-Transaction.git
+cd Bitcoin-Message-Transaction</code></pre>
+<!-- /wp:code -->
 
 ### Install Dependencies
-pip install pycryptodome
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>pip install ipywidgets zmq urllib3 requests pycryptodome</code></pre>
+<!-- /wp:code -->
+
 ---
 
 ## 📖 Usage
@@ -53,9 +62,13 @@ Click **File** → **New Notebook**
 #### Step 3: Install Dependencies
 
 Copy and paste this code into the first cell:
-!pip install ipywidgets zmq urllib3 requests pycryptodome
-!git clone https://github.com/zoeir/Bitcoin-Message-Transaction.git > /dev/null 2>&1
-%cd Bitcoin-Message-Transaction
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>!pip install ipywidgets zmq urllib3 requests pycryptodome
+!git clone https://github.com/zoeir/Bitcoin-Message-Transaction.git > /dev/null 2>&amp;1
+%cd Bitcoin-Message-Transaction</code></pre>
+<!-- /wp:code -->
+
 Run the cell (press `Shift + Enter`)
 
 #### Step 4: Load the Script
@@ -65,7 +78,22 @@ In a new cell, copy the entire content of [`colab.py`](colab.py) and run it.
 #### Step 5: Fill the Form
 
 An interactive form will appear with the following fields:
-| Field | Description | Example ||-------|-------------|---------|| 🔑 **Private Key (WIF)** | Your Bitcoin private key in WIF format | `5J64pq77XjeacCezwmAr2V1s7snvvJkuAz8sENxw7xCkikceV6e` || 🆔 **UTXO TXID** | Transaction ID containing your funds | `2a29fdb4e188f827da3c3175856b3ed95819b323bb303a46b8036534e78c76db` || 🔢 **UTXO Index** | Output index (usually 0) | `0` || 💰 **UTXO Value** | Amount in satoshi | `30352330` || 💸 **Transaction Fee** | Network fee (500-10000 sat) | `1000` || 📤 **Send Amount** | Amount to send in satoshi | `600` || 📍 **Recipient Address** | Destination Bitcoin address | `1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC` || 💬 **Message** | Your text message (max 80 bytes) | `Hello Bitcoin!` || 🧪 **Use Testnet** | Enable for testing | ☑️ Checked |#### Step 6: Create Transaction
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>| Field | Description | Example |
+|-------|-------------|---------|
+| 🔑 **Private Key (WIF)** | Your Bitcoin private key in WIF format | `5J64pq77XjeacCezwmAr2V1s7snvvJkuAz8sENxw7xCkikceV6e` |
+| 🆔 **UTXO TXID** | Transaction ID containing your funds | `2a29fdb4e188f827da3c3175856b3ed95819b323bb303a46b8036534e78c76db` |
+| 🔢 **UTXO Index** | Output index (usually 0) | `0` |
+| 💰 **UTXO Value** | Amount in satoshi | `30352330` |
+| 💸 **Transaction Fee** | Network fee (500-10000 sat) | `1000` |
+| 📤 **Send Amount** | Amount to send in satoshi | `600` |
+| 📍 **Recipient Address** | Destination Bitcoin address | `1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC` |
+| 💬 **Message** | Your text message (max 80 bytes) | `Hello Bitcoin!` |
+| 🧪 **Use Testnet** | Enable for testing | ☑️ Checked |</code></pre>
+<!-- /wp:code -->
+
+#### Step 6: Create Transaction
 
 Click **"Create Bitcoin Transaction"** button
 
@@ -238,3 +266,4 @@ Please use the [GitHub Issues](https://github.com/zoeir/Bitcoin-Message-Transact
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/zoeir/Bitcoin-Message-Transaction)
 
 ---
+
