@@ -107,15 +107,23 @@ The output will display:
 For users who prefer command-line interface on their desktop/laptop.
 
 #### Step 1: Navigate to Repository
-cd Bitcoin-Message-Transaction
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>cd Bitcoin-Message-Transaction</code></pre>
+<!-- /wp:code -->
+
 #### Step 2: Run the Script
-python3 main.py
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>python3 main.py</code></pre>
+<!-- /wp:code -->
 
 #### Step 3: Follow Interactive Prompts
 
 The script will ask for:
 
-=================================
+<!-- wp:code -->
+<pre class="wp-block-code"><code>=================================
 BITCOIN MESSAGE TRANSACTION CREATOR
 Enter your Private Key (WIF): 5J64pq77Xjeac...
 
@@ -133,9 +141,14 @@ Enter Transaction Fee (satoshi, default 1000): 1000
 Enter your message (up to 80 bytes): Hello Bitcoin!
 
 --- Network Selection ---
-Use Testnet? (y/n, default y): y
+Use Testnet? (y/n, default y): y</code></pre>
+<!-- /wp:code -->
+
+
 #### Step 4: Review Output
-=================================
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>============================================================
 BITCOIN TRANSACTION (OP_RETURN)
 Your BTC Address: 14NWDXkQwcGN1Pd9fboL8npVynD5SfyJAE
 Recipient Address: 1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC
@@ -147,7 +160,9 @@ OP_RETURN Message: Hello Bitcoin!
 
 RawTX (Hex):
 0100000001db768ce7346503b8463a30bb23b31958d93e6b8575313cda..
-============================================================
+============================================================</code></pre>
+<!-- /wp:code -->
+
 ✓ Transaction saved to file: RawTX_OP_RETURN.txt
 
 ---
@@ -157,7 +172,24 @@ RawTX (Hex):
 After creating your transaction, broadcast it using any of these services:
 
 ### Mainnet Services
-| Service | URL ||---------|-----|| 🌐 **Bitcoin Message** | [bitcoinmessage.ru](https://bitcoinmessage.ru) |**Steps:**1. Copy your **RawTX (Hex)** from the output2. Visit any broadcast service above3. Paste the RawTX into the form4. Click "Broadcast" or "Push"5. Wait for confirmation ⏱️---## 📦 Requirements
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>| Service | URL |
+|---------|-----|
+| 🌐 **Bitcoin Message** | &#91;bitcoinmessage.ru](https://bitcoinmessage.ru) |</code></pre>
+<!-- /wp:code -->
+
+**Steps:**
+
+1. Copy your **RawTX (Hex)** from the output
+2. Visit any broadcast service above
+3. Paste the RawTX into the form
+4. Click "Broadcast" or "Push"
+5. Wait for confirmation 
+
+---
+
+## 📦 Requirements
 
 ### Python Packages
 
@@ -192,7 +224,7 @@ Fee: 2000 satoshi
 
 ### Example 3: Identity Proof
 
-Message: "github.com/yourname - Verified 2025-10-23"
+Message: "github.com/zoeir/Bitcoin-Message-Transaction/ - Verified 2025"
 Send Amount: 600 satoshi
 Fee: 1500 satoshi
 
@@ -228,9 +260,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Development Setup
 
-git clone https://github.com/zoeir/Bitcoin-Message-Transaction.git
+<!-- wp:code -->
+<pre class="wp-block-code"><code>git clone https://github.com/zoeir/Bitcoin-Message-Transaction.git
 cd Bitcoin-Message-Transaction
-pip install -r requirements.txt
+pip install -r requirements.txt</code></pre>
+<!-- /wp:code -->
+
 ### Reporting Issues
 
 Please use the [GitHub Issues](https://github.com/zoeir/Bitcoin-Message-Transaction/issues) page to report bugs or request features.
@@ -250,11 +285,6 @@ Please use the [GitHub Issues](https://github.com/zoeir/Bitcoin-Message-Transact
 
 ---
 
-## 🔗 Related Projects
-
-- [Bitcoin Core](https://github.com/bitcoin/bitcoin)
-- [Electrum](https://github.com/spesmilo/electrum)
-- [BTCPay Server](https://github.com/btcpayserver/btcpayserver)
 
 ---
 
@@ -266,4 +296,5 @@ Please use the [GitHub Issues](https://github.com/zoeir/Bitcoin-Message-Transact
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/zoeir/Bitcoin-Message-Transaction)
 
 ---
+
 
